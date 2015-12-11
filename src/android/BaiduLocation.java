@@ -36,14 +36,22 @@ public class BaiduLocation extends CordovaPlugin {
         @Override
         public void onReceiveLocation(BDLocation location) {
             try {
+
+
+                JSONObject jsonNew = new JSONObject();
+                double latitude = location.getLatitude();
+                String latitudeString = Double.toString(latitude);
+
+                double longtitude = location.getLongitude();
+                String longtitudeString = Double.toString(longtitude);
                 JSONObject json = new JSONObject();
 
                 json.put("time", location.getTime());
                 json.put("locType", location.getLocType());
-                json.put("latitude", location.getLatitude());
-                json.put("lontitude", location.getLongitude());
+                json.put("latitude", latitudeString);
+                json.put("longitude", longtitudeString);
                 json.put("radius", location.getRadius());
-
+                json.put("accuracy", 50);
                 StringBuilder sb = new StringBuilder(256);
                 sb.append("time : ");
                 sb.append(location.getTime());
@@ -51,7 +59,7 @@ public class BaiduLocation extends CordovaPlugin {
                 sb.append(location.getLocType());
                 sb.append("\nlatitude : ");
                 sb.append(location.getLatitude());
-                sb.append("\nlontitude : ");
+                sb.append("\nlongitude : ");
                 sb.append(location.getLongitude());
                 sb.append("\nradius : ");
                 sb.append(location.getRadius());
@@ -120,8 +128,8 @@ public class BaiduLocation extends CordovaPlugin {
     //                }
     //            }
                 LOG.i(LOG_TAG, sb.toString());
-
-                PluginResult pluginResult = new PluginResult(PluginResult.Status.OK, sb.toString());
+                jsonNew.put("coords", json);
+                PluginResult pluginResult = new PluginResult(PluginResult.Status.OK, jsonNew);
                 pluginResult.setKeepCallback(true);
                 cbCtx.sendPluginResult(pluginResult);
             } catch (JSONException e) {
