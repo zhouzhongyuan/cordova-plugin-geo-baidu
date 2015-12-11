@@ -1,9 +1,9 @@
 {
-  "name": "cordova-qdc-baidu-location",
-  "version": "1.0.1",
-  "description": "Cordova Device Plugin",
+  "name": "cordova-plugin-geoloaction-baidu-android",
+  "version": "1.0.0",
+  "description": "cordova plugin geoloaction with baidu SDK for android only",
   "cordova": {
-    "id": "cordova-qdc-baidu-location",
+    "id": "cordova-plugin-geoloaction-baidu-android",
     "platforms": [
       "android"
     ]
@@ -13,8 +13,10 @@
     "url": "https://github.com/mrwutong/cordova-qdc-baidu-location"
   },
   "keywords": [
-    "cordova"
+    "cordova",
+    "baidu",
+    "geolocation"
   ],
-  "author": "Apache Software Foundation",
-  "license": "Apache 2.0"
+  "author": "Zhongyuan Zhou",
+  "license": "MIT"
 }
