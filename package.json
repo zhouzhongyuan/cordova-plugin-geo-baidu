@@ -10,10 +10,11 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/mrwutong/cordova-qdc-baidu-location"
+    "url": "https://github.com/zhouzhongyuan/cordova-plugin-geoloaction-baidu-android"
   },
   "keywords": [
     "cordova",
+    "map",
     "baidu",
     "geolocation"
   ],
