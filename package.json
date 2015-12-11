@@ -1,0 +1,20 @@
+{
+  "name": "cordova-qdc-baidu-location",
+  "version": "1.0.1",
+  "description": "Cordova Device Plugin",
+  "cordova": {
+    "id": "cordova-qdc-baidu-location",
+    "platforms": [
+      "android"
+    ]
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/mrwutong/cordova-qdc-baidu-location"
+  },
+  "keywords": [
+    "cordova"
+  ],
+  "author": "Apache Software Foundation",
+  "license": "Apache 2.0"
+}
