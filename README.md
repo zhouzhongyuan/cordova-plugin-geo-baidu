@@ -1,9 +1,29 @@
-#特点
+#cordova-plugin-geoloaction-baidu-android
+#百度定位SDK cordova插件
+##特点
 * 返回json格式的数据
 * 返回的json数据与cordova-plugin-geolocation一致
 * 可与官方插件配合使用，platform为android时使用本插件，iOS时使用官方插件。
 
+##适用对象
+* **中国**定位不准确的cordova **Android** 应用程序
 
+##不适用于
+* iOS
+
+##安装之前
+* API_KEY: 百度定位SDK的key
+  * 申请方法请看[申请密钥Android定位SDK](http://developer.baidu.com/map/index.php?title=android-locsdk/guide/key)
+
+##安装
+```
+cordova plugin add https://github.com/zhouzhongyuan/cordova-plugin-geoloaction-baidu-android --variable API_KEY="<API_KEY>"
+**注：API_KEY不带左右尖括号**
+```
+
+
+
+##以下为引用别人人内容
 
 #百度地图定位Android版插件
 本插件利用百度地图提供的定位功能进行Android版手机定位。
