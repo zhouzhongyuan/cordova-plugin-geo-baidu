@@ -1,7 +1,7 @@
 #特点
-##1.返回json格式的数据
-##2.返回的json数据与cordova-plugin-geolocation一致
-##3.可与官方插件配合使用，platform为android时使用本插件，iOS时使用官方插件。
+* 返回json格式的数据
+* 返回的json数据与cordova-plugin-geolocation一致
+* 可与官方插件配合使用，platform为android时使用本插件，iOS时使用官方插件。
 
 
 
