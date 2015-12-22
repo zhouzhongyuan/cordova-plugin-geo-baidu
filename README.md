@@ -1,3 +1,10 @@
+#特点
+##1.返回json格式的数据
+##2.返回的json数据与cordova-plugin-geolocation一致
+##3.可与官方插件配合使用，platform为android时使用本插件，iOS时使用官方插件。
+
+
+
 #百度地图定位Android版插件
 本插件利用百度地图提供的定位功能进行Android版手机定位。
   
@@ -24,7 +31,7 @@ __此插件就这么诞生了__
 ####二，安装插件
 
 ```
-ionic plugin add https://github.com/mrwutong/cordova-qdc-baidu-location --variable API_KEY="<API_KEY>"
+cordova plugin add https://github.com/zhouzhongyuan/cordova-plugin-geoloaction-baidu-android --variable API_KEY="<API_KEY>"
 **注：此处的API_KEY来自于第一步，不带左右尖括号**
 ```
 
@@ -49,15 +56,16 @@ baidu_location.getCurrentPosition(successCallback, failedCallback);
 ####四，查看当前安装了哪些插件
 
 ```
-ionic plugin ls
+cordova plugin ls
 ```
 
 ####五，删除插件
 
 ```
-ionic plugin rm com.qdc.plugins.baidu.location
+cordova plugin rm cordova-plugin-geoloaction-baidu-android
 ```
-
+#### To do
+升级 Baidu android SDK form 5.3 to 6.0
 
 
 

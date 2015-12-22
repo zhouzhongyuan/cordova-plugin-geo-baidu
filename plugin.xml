@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <plugin xmlns="http://apache.org/cordova/ns/plugins/1.0"
   xmlns:android="http://schemas.android.com/apk/res/android"
-  id="com.qdc.plugins.baidu.location"
+  id="cordova-plugin-geoloaction-baidu-android"
   version="1.0.0">
   <name>BaiduLocation</name>
 
@@ -16,7 +16,7 @@
 
     <config-file target="res/xml/config.xml" parent="/*">
       <feature name="BaiduLocation">
-        <param name="android-package" value="com.qdc.plugins.baidu.BaiduLocation" />
+        <param name="android-package" value="cordova-plugin-geoloaction-baidu-android" />
       </feature>
     </config-file>
 
@@ -47,7 +47,7 @@
       <meta-data android:name="com.baidu.lbsapi.API_KEY" android:value="$API_KEY" />
     </config-file>
 
-    <source-file src="src/android/BaiduLocation.java" target-dir="src/com/qdc/plugins/baidu" />
+    <source-file src="src/android/BaiduLocation.java" target-dir="src/cordova/plugin/geoloactionBaiduAndroid" />
     <source-file src="libs/android/armeabi/liblocSDK5.so" target-dir="libs/armeabi" />
     <source-file src="libs/android/armeabi/liblocSDK5.so" target-dir="libs/armeabi-v7a" />
     <source-file src="libs/android/BaiduLBS_Android.jar" target-dir="libs" />
